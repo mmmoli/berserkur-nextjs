@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { ReactNode } from "react";
 
 import { fonts } from "../lib/fonts";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,7 +25,7 @@ export const RootLayout = ({
           fonts.variable,
         )}
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
