@@ -25,7 +25,8 @@
       "@design-system/utils": [
         "./src/lib/contexts/common/shared/design-system/utils"
       ],
-      "@services/*": ["./src/lib/contexts/common/shared/services/*"]
+      "@services/*": ["./src/lib/contexts/common/shared/services/*"],
+      "@common/*": ["./src/lib/contexts/common/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
