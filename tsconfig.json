@@ -19,14 +19,14 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
       "@ui/*": ["./src/lib/contexts/common/shared/design-system/ui/*"],
       "@design-system/*": ["./src/lib/contexts/common/shared/design-system/*"],
       "@design-system/utils": [
         "./src/lib/contexts/common/shared/design-system/utils"
       ],
       "@services/*": ["./src/lib/contexts/common/shared/services/*"],
-      "@common/*": ["./src/lib/contexts/common/*"]
+      "@common/*": ["./src/lib/contexts/common/*"],
+      "@auth/*": ["./src/lib/contexts/auth/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
