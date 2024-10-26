@@ -19,7 +19,12 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@ui/*": ["./src/lib/contexts/common/shared/design-system/ui/*"],
+      "@design-system/*": ["./src/lib/contexts/common/shared/design-system/*"],
+      "@design-system/utils": [
+        "./src/lib/contexts/common/shared/design-system/utils"
+      ]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
