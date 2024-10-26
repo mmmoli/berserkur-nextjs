@@ -1,5 +1,15 @@
+import { logger } from "@services/logger";
 import { Button } from "@ui/button";
 
 export default function Home() {
-  return <Button>Click Me</Button>;
+  async function create() {
+    "use server";
+    logger.log("Hello from logger");
+  }
+
+  return (
+    <form action={create}>
+      <Button type="submit">Click Me</Button>
+    </form>
+  );
 }
